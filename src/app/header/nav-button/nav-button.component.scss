@@ -1,0 +1,23 @@
+.nav-button {
+    margin-left: 50px;
+    padding: 3px 10px;
+
+    user-select: none;
+    cursor: pointer;
+
+    border: none;
+    border-radius: 20px;
+
+    color: inherit;
+    background-color: inherit;
+
+    transition: background-color 0s;
+
+    font-size: large;
+
+    &:hover {
+        color: darkblue;
+        background-color: cyan;
+        transition: background-color 0.75s ease-in-out;
+    }
+}

@@ -1,0 +1,49 @@
+:host {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: clamp(60px, 5%, 150px);
+
+  background-color: aqua;
+  opacity: 60%;
+
+  transition: height 0.75s;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+
+
+  &:hover {
+    opacity: 100%;
+    background-color: darkblue;
+    height: clamp(60px, 10%, 150px);
+
+    #MOTD {
+        color: pink;
+    }
+
+    app-nav-button {
+        color: azure;
+    }
+  }
+}
+
+app-search-bar {
+  padding-right: 2%;
+  height: fit-content;
+}
+
+#MOTD {
+  padding-left: 2%;
+}
+
+@media (max-width: 600px) {
+  #MOTD {
+    display: none;
+  }
+}
+
