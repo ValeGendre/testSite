@@ -1,8 +1,6 @@
 <div id="page">
     <app-header></app-header>
-    <!-- <div id="content">
-      <app-articles-content [routerLink]="['/']"></app-articles-content>
-      <app-doc-content [routerLink]="['/documentation']"></app-doc-content>
-      <app-script-content [routerLink]="['/scripts']"></app-script-content>
-    </div> -->
+    <div id="content">
+      <router-outlet></router-outlet>
+    </div>
 </div>

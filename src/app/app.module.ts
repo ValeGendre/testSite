@@ -23,9 +23,10 @@ import { RouterModule } from '@angular/router';
   imports: [
     BrowserModule,
     RouterModule.forRoot([
-      { path: '/documetation', component: DocContentComponent },
-      { path: '/scripts', component: ScriptContentComponent },
-      { path: '', component: ArticlesContentComponent },
+      { path: 'documetation', component: DocContentComponent },
+      { path: 'scripts', component: ScriptContentComponent },
+      { path: 'posts', component: ArticlesContentComponent },
+      {path: '', redirectTo: '/posts', pathMatch: 'full'}
     ])
   ],
   providers: [],

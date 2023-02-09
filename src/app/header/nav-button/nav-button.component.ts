@@ -8,12 +8,13 @@ import { Component, Input, OnInit } from '@angular/core';
 export class NavButtonComponent {
   @Input() defaultMenuName!: string;
   menuName!:string;
+  highlighted:string = '';
 
   ngOnInit() {
     this.menuName = this.defaultMenuName;
   }
 
   nav_clicked() {
-    this.menuName = this.menuName === this.defaultMenuName ? 'Clické': this.defaultMenuName;
+    this.highlighted = this.highlighted === '' ? 'button-hightlight': '';
   }
 }
