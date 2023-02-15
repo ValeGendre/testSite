@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PainService } from 'src/app/pain.service';
 
 @Component({
   selector: 'app-search-bar',
@@ -6,5 +7,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./search-bar.component.scss']
 })
 export class SearchBarComponent {
+
+
+  constructor(private pain: PainService) {
+
+  }
+
+
+  showPain() {
+    let searchBarInput = document.getElementById('searchBarInput') as HTMLInputElement;
+    this.pain.showPain(searchBarInput.value);
+  }
 
 }

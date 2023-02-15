@@ -1,12 +1,10 @@
 :host {
-  position: fixed;
-  top: 0;
-  left: 0;
+  position: sticky;
 
   width: 100%;
-  height: clamp(60px, 5%, 150px);
+  height: 5%;
 
-  background-color: aqua;
+  background-color: #ffbbff;
   opacity: 60%;
 
   transition: height 0.75s;
@@ -15,25 +13,29 @@
   flex-direction: row;
   align-items: center;
 
+  app-nav-button {
+    color:#440060;
+  }
+
 
 
   &:hover {
     opacity: 100%;
-    background-color: darkblue;
-    height: clamp(60px, 10%, 150px);
+    background-color: #440060;
+    height: 10%;
 
     #MOTD {
         color: pink;
     }
 
     app-nav-button {
-        color: azure;
+      color:#ffbbff;
     }
   }
 }
 
 app-search-bar {
-  padding-right: 2%;
+  padding-left: 30%;
   height: fit-content;
 }
 

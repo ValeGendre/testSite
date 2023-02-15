@@ -5,10 +5,13 @@
     user-select: none;
     cursor: pointer;
 
-    border: none;
+    border: solid;
+    border-color:transparent;
     border-radius: 20px;
 
     color: inherit;
+    font-weight: bold;
+    font-family: "Playfair Display rev=1";
     background-color: inherit;
 
     transition: background-color 0s;
@@ -16,13 +19,13 @@
     font-size: large;
 
     &:hover {
-        color: darkblue;
-        background-color: cyan;
-        transition: background-color 0.75s ease-in-out;
+        color: #440060;
+        background-color: #ffbbff;
+        transition: background-color 0.5s ease-in-out;
     }
 }
 
 .button-hightlight {
   border: solid;
-  border-color: lightcoral;
+  border-color: #440060;
 }
